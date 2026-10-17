@@ -3,45 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>米牙 - 试探性分手 (Lyrics & Pinyin)</title>
+  <title>米牙 - 试探性分手 | 拼音歌词</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="header">
     <div class="header-inner">
-      <span class="badge">Romanized / Pinyin Lyrics</span>
+      <span class="badge">Romanized / Pinyin</span>
       <h1>试探性分手</h1>
       <p class="artist">米牙 (Miya)</p>
     </div>
   </header>
 
   <main class="container">
-    <div class="lyrics-card">
-      <div class="section-title">[ Chorus / 副歌 ]</div>
-
-      <!-- Each lyric pair displays the original Chinese and Pinyin side-by-side -->
-      <div class="line-pair">
-        <span class="original">我说分手</span>
-        <span class="pinyin">Wǒ shuō fēnshǒu</span>
-      </div>
-
-      <div class="line-pair">
-        <span class="original">是想你挽留</span>
-        <span class="pinyin">Shì xiǎng nǐ wǎnliú</span>
-      </div>
-
-      <div class="line-pair">
-        <span class="original">你怎么真的点了头</span>
-        <span class="pinyin">Nǐ zěnme zhēnde diǎnle tóu</span>
-      </div>
-
-      <div class="line-pair">
-        <span class="original">我把狠话说够</span>
-        <span class="pinyin">Wǒ bǎ hěn huà shuō gòu</span>
-      </div>
-
-      <!-- Add remaining lines following the same structure -->
+    <div class="lyrics-card" id="lyrics-container">
+      <!-- Generated dynamically -->
     </div>
   </main>
 
@@ -49,5 +26,161 @@
     <p>Lyrics © Original Rights Holders & Artists.</p>
   </footer>
 
+  <script>
+    // Raw Hanzi lyrics block
+    const hanziRaw = `我说分手
+是想你挽留
+你怎么真的点了头
+我把狠话说够
+却连你的衣袖
+都舍不得松手
+你给的自由
+我根本不想有
+我只是想让你心疼我的难受
+最疼的不是你走
+是我哭了那么久
+你还说这样对彼此都好受
+我把那些委屈 说了好久好久
+你一直低着头 偶尔应我一句嗯
+我越说越小声 怕你觉得我烦透
+最后连为什么哭 都像是我的错
+从前吵到一半 你会先把我抱住
+如今连我说要走 你也没有抬头
+那句算了吧
+我说得多颤抖
+多希望你能听出我没说的请求
+不用承诺以后
+只要拉住我的手
+说一句别走 我就不会走
+我说分手
+是想你挽留
+你怎么真的点了头
+我把狠话说够
+却连你的衣袖
+都舍不得松手
+你给的自由
+我根本不想有
+我只是想让你心疼我的难受
+最疼的不是你走
+是我哭了那么久
+你还说这样对彼此都好受
+我把衣服叠得很慢 一直没拉上拉链
+你递来落下的充电器 又叫我检查一遍
+那件旧睡衣没装 想留个回来的理由
+你替我放进箱子 说省得以后再跑一趟
+你伸手擦我眼泪 我以为你也会舍不得
+你却说以后要找个 比你更合适的人
+我不要谁更温柔
+也不想重新来过
+我说的以后 从来没想过换个人陪我
+我把气话收回
+也承认舍不得
+可你只等我哭完 没打算再爱我
+我说分手
+是想你挽留
+你怎么真的点了头
+我把狠话说够
+却连你的衣袖
+都舍不得松手
+你给的自由
+我根本不想有
+我只是想让你心疼我的难受
+最疼的不是你走
+是我哭了那么久
+你还说这样对彼此都好受
+门口那段路
+我走了好久
+不是东西没拿够
+是想给你时间
+叫我别走`;
+
+    // Raw Pinyin lyrics block
+    const pinyinRaw = `wǒ shuō fēn shǒu
+shì xiǎng nǐ wǎn liú
+nǐ zěn me zhēn de diǎn liǎo tóu
+wǒ bǎ hěn huà shuō gòu
+què lián nǐ de yī xiù
+dū shè bù dé sōng shǒu
+nǐ gěi de zì yóu
+wǒ gēn běn bù xiǎng yǒu
+wǒ zhī shì xiǎng ràng nǐ xīn téng wǒ de nán shòu
+zuì téng de bù shì nǐ zǒu
+shì wǒ kū liǎo nà me jiǔ
+nǐ huán shuō zhè yàng duì bǐ cǐ dū hǎo shòu
+wǒ bǎ nà xiē wěi qū   shuō liǎo hǎo jiǔ hǎo jiǔ
+nǐ yī zhí dī zhuó tóu   ǒu ěr yīng wǒ yī jù ēn
+wǒ yuè shuō yuè xiǎo shēng   pà nǐ jué dé wǒ fán tòu
+zuì hòu lián wéi shén me kū   dū xiàng shì wǒ de cuò
+cóng qián chǎo dào yī bàn   nǐ huì xiān bǎ wǒ bào zhù
+rú jīn lián wǒ shuō yào zǒu   nǐ yě méi yǒu tái tóu
+nà jù suàn liǎo bā
+wǒ shuō dé duō chàn dǒu
+duō xī wàng nǐ néng tīng chū wǒ méi shuō de qǐng qiú
+bù yòng chéng nuò yǐ hòu
+zhī yào lā zhù wǒ de shǒu
+shuō yī jù bié zǒu   wǒ jiù bù huì zǒu
+wǒ shuō fēn shǒu
+shì xiǎng nǐ wǎn liú
+nǐ zěn me zhēn de diǎn liǎo tóu
+wǒ bǎ hěn huà shuō gòu
+què lián nǐ de yī xiù
+dū shè bù dé sōng shǒu
+nǐ gěi de zì yóu
+wǒ gēn běn bù xiǎng yǒu
+wǒ zhī shì xiǎng ràng nǐ xīn téng wǒ de nán shòu
+zuì téng de bù shì nǐ zǒu
+shì wǒ kū liǎo nà me jiǔ
+nǐ huán shuō zhè yàng duì bǐ cǐ dū hǎo shòu
+wǒ bǎ yī fú dié dé hěn màn   yī zhí méi lā shàng lā liàn
+nǐ dì lái luò xià de chōng diàn qì   yòu jiào wǒ jiǎn chá yī biàn
+nà jiàn jiù shuì yī méi zhuāng   xiǎng liú gè huí lái de lǐ yóu
+nǐ tì wǒ fàng jìn xiāng zǐ   shuō shěng dé yǐ hòu zài pǎo yī tàng
+nǐ shēn shǒu cā wǒ yǎn lèi   wǒ yǐ wéi nǐ yě huì shè bù dé
+nǐ què shuō yǐ hòu yào zhǎo gè   bǐ nǐ gēng hé shì de rén
+wǒ bù yào shuí gēng wēn róu
+yě bù xiǎng zhòng xīn lái guò
+wǒ shuō de yǐ hòu   cóng lái méi xiǎng guò huàn gè rén péi wǒ
+wǒ bǎ qì huà shōu huí
+yě chéng rèn shè bù dé
+kě nǐ zhī děng wǒ kū wán   méi dǎ suàn zài ài wǒ
+wǒ shuō fēn shǒu
+shì xiǎng nǐ wǎn liú
+nǐ zěn me zhēn de diǎn liǎo tóu
+wǒ bǎ hěn huà shuō gòu
+què lián nǐ de yī xiù
+dū shè bù dé sōng shǒu
+nǐ gěi de zì yóu
+wǒ gēn běn bù xiǎng yǒu
+wǒ zhī shì xiǎng ràng nǐ xīn téng wǒ de nán shòu
+zuì téng de bù shì nǐ zǒu
+shì wǒ kū liǎo nà me jiǔ
+nǐ huán shuō zhè yàng duì bǐ cǐ dū hǎo shòu
+mén kǒu nà duàn lù
+wǒ zǒu liǎo hǎo jiǔ
+bù shì dōng xī méi ná gòu
+shì xiǎng gěi nǐ shí jiān
+jiào wǒ bié zǒu`;
+
+    const hanziLines = hanziRaw.split("\n");
+    const pinyinLines = pinyinRaw.split("\n");
+    const container = document.getElementById("lyrics-container");
+
+    hanziLines.forEach((hz, idx) => {
+      const lineDiv = document.createElement("div");
+      lineDiv.className = "line-pair";
+
+      const hzSpan = document.createElement("span");
+      hzSpan.className = "original";
+      hzSpan.textContent = hz;
+
+      const pySpan = document.createElement("span");
+      pySpan.className = "pinyin";
+      pySpan.textContent = pinyinLines[idx] || "";
+
+      lineDiv.appendChild(hzSpan);
+      lineDiv.appendChild(pySpan);
+      container.appendChild(lineDiv);
+    });
+  </script>
 </body>
 </html>
