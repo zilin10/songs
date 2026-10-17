@@ -1,1 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+  background-color: #0e0e10;
+  color: #efeff1;
+  line-height: 1.6;
+}
+
+.header {
+  background: linear-gradient(180deg, #1f1f23 0%, #0e0e10 100%);
+  padding: 40px 20px 20px;
+  text-align: center;
+  border-bottom: 1px solid #2d2d35;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: #ffff64;
+  color: #000;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.artist {
+  font-size: 1.1rem;
+  color: #adadb8;
+}
+
+.container {
+  max-width: 760px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+.lyrics-card {
+  background: #18181b;
+  border-radius: 12px;
+  padding: 28px;
+  border: 1px solid #2d2d35;
+}
+
+.section-title {
+  color: #ffff64;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin: 18px 0 10px;
+  text-transform: uppercase;
+}
+
+.line-pair {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  padding: 6px 0;
+  border-bottom: 1px solid #222227;
+}
+
+.line-pair .original {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ffffff;
+  min-width: 220px;
+}
+
+.line-pair .pinyin {
+  font-size: 0.95rem;
+  color: #9ea0a6;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 0.8rem;
+  color: #71717a;
+}
+
+/* Responsive adjustments for phones */
+@media (max-width: 600px) {
+  .line-pair {
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 0;
+  }
+  .line-pair .original {
+    min-width: unset;
+  }
+}
