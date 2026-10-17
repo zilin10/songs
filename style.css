@@ -12,93 +12,97 @@ body {
 }
 
 .header {
-  background: linear-gradient(180deg, #1f1f23 0%, #0e0e10 100%);
-  padding: 40px 20px 20px;
+  background: linear-gradient(180deg, #18181c 0%, #0e0e10 100%);
+  padding: 48px 20px 24px;
   text-align: center;
-  border-bottom: 1px solid #2d2d35;
+  border-bottom: 1px solid #23232a;
 }
 
 .badge {
   display: inline-block;
-  font-size: 0.75rem;
-  letter-spacing: 1px;
+  font-size: 0.72rem;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
   background: #ffff64;
-  color: #000;
-  font-weight: 700;
-  padding: 3px 8px;
-  border-radius: 3px;
-  margin-bottom: 12px;
+  color: #0b0b0e;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 14px;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 800;
   margin-bottom: 6px;
+  letter-spacing: -0.5px;
 }
 
 .artist {
-  font-size: 1.1rem;
-  color: #adadb8;
+  font-size: 1.15rem;
+  color: #9ea0a6;
 }
 
 .container {
-  max-width: 760px;
-  margin: 30px auto;
+  max-width: 820px;
+  margin: 32px auto;
   padding: 0 16px;
 }
 
 .lyrics-card {
-  background: #18181b;
+  background: #141418;
   border-radius: 12px;
-  padding: 28px;
-  border: 1px solid #2d2d35;
-}
-
-.section-title {
-  color: #ffff64;
-  font-weight: 700;
-  font-size: 0.9rem;
-  margin: 18px 0 10px;
-  text-transform: uppercase;
+  padding: 24px 32px;
+  border: 1px solid #272730;
 }
 
 .line-pair {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) 1.2fr;
+  column-gap: 24px;
   align-items: baseline;
-  gap: 20px;
-  padding: 6px 0;
-  border-bottom: 1px solid #222227;
+  padding: 10px 0;
+  border-bottom: 1px solid #1c1c24;
 }
 
-.line-pair .original {
-  font-size: 1.05rem;
+.line-pair:last-child {
+  border-bottom: none;
+}
+
+.original {
+  font-size: 1.1rem;
   font-weight: 600;
   color: #ffffff;
-  min-width: 220px;
 }
 
-.line-pair .pinyin {
-  font-size: 0.95rem;
-  color: #9ea0a6;
-  font-style: italic;
+.pinyin {
+  font-size: 0.98rem;
+  color: #8c8f9a;
+  letter-spacing: 0.2px;
 }
 
 footer {
   text-align: center;
-  padding: 30px;
+  padding: 36px 16px;
   font-size: 0.8rem;
-  color: #71717a;
+  color: #555761;
 }
 
-/* Responsive adjustments for phones */
-@media (max-width: 600px) {
-  .line-pair {
-    flex-direction: column;
-    gap: 2px;
-    padding: 8px 0;
+/* Mobile responsive view */
+@media (max-width: 640px) {
+  .lyrics-card {
+    padding: 18px;
   }
-  .line-pair .original {
-    min-width: unset;
+  .line-pair {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    padding: 9px 0;
+  }
+  .original {
+    font-size: 1rem;
+  }
+  .pinyin {
+    font-size: 0.9rem;
   }
 }
